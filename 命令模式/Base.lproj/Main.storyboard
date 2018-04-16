@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PeS-Cx-0db">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RSw-Ov-qII">
+            <objects>
+                <viewController id="PeS-Cx-0db" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Bt-8f-vUb"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ti-t5-vsy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l1x-Ce-a6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7J-gd-Vz8">
+                                <rect key="frame" x="0.0" y="85" width="125" height="30"/>
+                                <state key="normal" title="降低亮度"/>
+                                <connections>
+                                    <action selector="BtnClick:" destination="PeS-Cx-0db" eventType="touchUpInside" id="kay-xm-xJx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5E-WI-tfr">
+                                <rect key="frame" x="125" y="85" width="125" height="30"/>
+                                <state key="normal" title="增加亮度"/>
+                                <connections>
+                                    <action selector="BtnClick:" destination="PeS-Cx-0db" eventType="touchUpInside" id="8nz-im-her"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YK-le-HyI">
+                                <rect key="frame" x="250" y="85" width="125" height="30"/>
+                                <state key="normal" title="回退一步"/>
+                                <connections>
+                                    <action selector="BtnClick:" destination="PeS-Cx-0db" eventType="touchUpInside" id="Agi-vz-xS0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7YK-le-HyI" firstAttribute="leading" secondItem="y5E-WI-tfr" secondAttribute="trailing" id="1es-Gd-QCn"/>
+                            <constraint firstAttribute="trailing" secondItem="7YK-le-HyI" secondAttribute="trailing" id="5pS-3b-kBy"/>
+                            <constraint firstItem="7YK-le-HyI" firstAttribute="top" secondItem="5Bt-8f-vUb" secondAttribute="bottom" constant="65" id="7Rb-Ig-7mD"/>
+                            <constraint firstItem="y5E-WI-tfr" firstAttribute="height" secondItem="D7J-gd-Vz8" secondAttribute="height" id="Lgv-nl-bE7"/>
+                            <constraint firstItem="y5E-WI-tfr" firstAttribute="width" secondItem="D7J-gd-Vz8" secondAttribute="width" id="OXX-1p-fqH"/>
+                            <constraint firstItem="7YK-le-HyI" firstAttribute="width" secondItem="D7J-gd-Vz8" secondAttribute="width" id="Tiz-S3-5nv"/>
+                            <constraint firstItem="D7J-gd-Vz8" firstAttribute="leading" secondItem="l1x-Ce-a6h" secondAttribute="leading" id="UAm-cR-PG6"/>
+                            <constraint firstItem="D7J-gd-Vz8" firstAttribute="top" secondItem="5Bt-8f-vUb" secondAttribute="bottom" constant="65" id="cCN-i4-M9E"/>
+                            <constraint firstItem="7YK-le-HyI" firstAttribute="height" secondItem="D7J-gd-Vz8" secondAttribute="height" id="kBW-X1-o60"/>
+                            <constraint firstItem="y5E-WI-tfr" firstAttribute="leading" secondItem="D7J-gd-Vz8" secondAttribute="trailing" id="lv6-Dl-UlN"/>
+                            <constraint firstItem="y5E-WI-tfr" firstAttribute="top" secondItem="D7J-gd-Vz8" secondAttribute="top" id="yad-c6-PW2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ys-ce-pBL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-1"/>
+        </scene>
+    </scenes>
+</document>
